@@ -2,24 +2,40 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="min-h-screen w-full">
+    <main className="min-h-screen w-full bg-gray-950">
       <div className="flex flex-col items-center">
         {/*Mobile view.*/}
         <div
           id="Header"
-          className="w-full bg-blue-200 flex justify-center h-auto p-10"
+          className="w-11/12 flex justify-center  p-10 mt-3 rounded"
         >
-          <Image
-            src="/patrol.jpg"
-            width={120}
-            height={120}
-            className="rounded-full border-white border-2"
-            alt="A picture of buckethead used as a placeholder for the meanwhile"
-          />
+          <div className="">
+            <Image
+              src="/patrol.jpg"
+              width={150}
+              height={150}
+              className="rounded-full border-white border-2"
+              alt="A picture of buckethead used as a placeholder for the meanwhile"
+            />
+          </div>
         </div>
-        <div className="w-full bg-black p-20"></div>
-        <div className="w-full bg-blue-400 p-20"></div>
-        <div className="w-full bg-black bg-blue-600 p-20"></div>
+        <div className="w-11/12  mt-4 p-4 rounded border-t-2 border-white text-white  text-center">
+          <h1 className="">
+            Hello! I'm <strong>Juho Järvilehto</strong>
+          </h1>
+          <br />
+          <p>
+            I'm a 24 year old computer science student at metropolia. I'm
+            interested in games, music , philosophy and programming. Currently
+            working on improving UI/UX skills
+          </p>
+        </div>
+        <div className="w-11/12  mt-4 p-3 rounded border-2 border-white text-white">
+          <h1>hello hello hello</h1>
+        </div>
+        <div className="w-11/12  mt-4 p-3 rounded border-2 border-white text-white">
+          <h1>hello hello hello</h1>
+        </div>
       </div>
 
       {/*
