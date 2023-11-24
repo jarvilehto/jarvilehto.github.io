@@ -2,15 +2,30 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
-      <div className="">
-        <div className="flex items-center w-1/2 bg-slate-800 p-20">
+    <main className="flex justify-center min-h-screen w-full">
+      <div className=" md:w-4/6 sm:w-full">
+        <div className="flex h-1/6 shrink-0 items-center md:rounded-lg bg-blue-500 p-4 md:mt-8 sm:rounded-none mb-8">
           {/*Rounded Icon */}
-          <div className="rounded-full h-50 w-50 bg-black"></div>
+          <Image
+            src="/patrol.jpg"
+            width={110}
+            height={110}
+            className="rounded-full ml-10"
+            alt="A picture of buckethead used as a placeholder for the meanwhile"
+          />
+
           {/*Name and links to git / linkedint ETC*/}
           <div></div>
         </div>
-        <div className="flex items-center w-1/2 bg-slate-800 p-24">
+
+        <div className="flex items-center  bg-slate-800 p-24 mb-8">
+          {/*Information of studies hobbies etc*/}
+          <div></div>
+          {/*Coding skills + list of projects */}
+          <div></div>
+        </div>
+
+        <div className="flex items-center  bg-slate-800 p-24">
           {/*Information of studies hobbies etc*/}
           <div></div>
           {/*Coding skills + list of projects */}
