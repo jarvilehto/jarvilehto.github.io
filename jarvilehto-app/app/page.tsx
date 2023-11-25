@@ -26,20 +26,23 @@ export default function Home() {
           <br />
           <p className="pb-5">
             I'm a 24 year old computer science student at metropolia. I'm
-            interested in games, music , philosophy and programming. Currently
-            working on improving UI/UX skills
+            interested in games, music and programming. <br />
+            Currently working on improving UI/UX skills
           </p>
         </div>
         <div className=" w-11/12 flex  flex-col pt-7 sm:flex-row sm:justify-center">
-          <div className="  mb-5  p-3 rounded bg-white/30 backdrop-blur-sm text-white shadow-xl sm:w-3/5 sm:mr-2 sm:mb-0">
-            <h1>
-              A list of programming languages I have used in projects so far
-            </h1>
+          <div className="  mb-5  p-4 rounded bg-white/30 backdrop-blur-sm text-white shadow-xl sm:w-3/5 sm:mr-2 sm:mb-0">
+            <h1 className="font-bold underline">My skill set.</h1>
             <br />
+            <p>
+              During my studies I have learned the basics of programming that
+              later evolved into being specialized in web-development and mobile
+              applications. I have been involved in many projects that have b
+            </p>
           </div>
-          <div className=" p-3 rounded bg-white/30 backdrop-blur-sm justify-between text-white shadow-xl flex sm:w-2/5 sm:ml-2 flex-col">
+          <div className=" h-1/3 p-3 rounded bg-white/30 backdrop-blur-sm justify-between text-white shadow-xl flex sm:w-2/5 sm:ml-2 flex-col">
             <div className="">
-              <p>asdasdasdasdasdasdasd</p>
+              <p></p>
             </div>
             <div className="bg-white/50 rounded-full p-3 mt-3"></div>
           </div>
