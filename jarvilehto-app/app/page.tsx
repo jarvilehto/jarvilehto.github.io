@@ -33,7 +33,7 @@ export default function Home() {
           </h1>
           <br />
           <p className="pb-5">
-            I'm a 24 year old computer science student at metropolia. I'm
+            I am an 24 year old engineering student at metropolia. I am
             interested in games, music and programming. <br />
             Currently working on improving UI/UX skills
           </p>
@@ -51,9 +51,9 @@ export default function Home() {
                 <p>
                   During my studies I have learned the basics of programming
                   that later evolved into being specialized in web-development
-                  and mobile applications. Some of the languages I have used
-                  during my studies and personal development projects and work
-                  have been.
+                  and mobile applications. Here I have listed those which I have
+                  used the most in development for assignments, work and
+                  personal projects.
                 </p>
                 <p className="mt-1 font-bold">click me.</p>
               </>
@@ -61,10 +61,54 @@ export default function Home() {
 
             {skill && (
               <>
-                <div className="w-full">
-                  <div className="flex justify-around font-bold border-b-2 pb-2">
-                    <h1>Language </h1>
-                    <p>Skill</p>
+                <div>
+                  <div
+                    id="class-table"
+                    className=" flex-none min-w-full px-4 sm:px-6 md:px-0 overflow-hidden lg:overflow-auto scrollbar:!w-1.5 scrollbar:!h-1.5 scrollbar:bg-transparent scrollbar-track:!bg-slate-100 scrollbar-thumb:!rounded scrollbar-thumb:!bg-slate-300 scrollbar-track:!rounded dark:scrollbar-track:!bg-slate-500/[0.16] dark:scrollbar-thumb:!bg-slate-500/50"
+                  >
+                    <table className="w-full border-collapse text-left">
+                      <thead className="border-b mb-4">
+                        <tr>
+                          <th className="leading-6 font-semibold text-white">
+                            <div className=" py-2">language</div>
+                          </th>
+                          <th className="leading-6 font-semibold text-white">
+                            <div className="py-2">skill</div>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody className="align-baseline">
+                        <tr className="">
+                          <td className="font-mono">Javascript</td>
+                          <td className="font-mono">Intermediate</td>
+                        </tr>
+                        <tr>
+                          <td className="font-mono">React</td>
+                          <td className="font-mono">Intermediate</td>
+                        </tr>
+                        <tr>
+                          <td className="font-mono">Java/kotlin</td>
+                          <td className="font-mono">Intermediate</td>
+                        </tr>
+                        <tr>
+                          <td className="font-mono">Node</td>
+                          <td className="font-mono">Intermediate</td>
+                        </tr>
+                        <tr>
+                          <td className="font-mono">MySQL</td>
+                          <td className="font-mono">Intermediate</td>
+                        </tr>
+                        <tr>
+                          <td className="font-mono">Wordpress</td>
+                          <td className="font-mono">Intermediate</td>
+                        </tr>
+                        <tr>
+                          <td className="font-mono">php</td>
+                          <td className="font-mono">familiar</td>
+                        </tr>
+                      </tbody>
+                      <p className="mt-2">and many more...</p>
+                    </table>
                   </div>
                 </div>
               </>
