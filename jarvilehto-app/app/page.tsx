@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="min-h-screen w-full bg-gray-950">
-      <div className="flex flex-col items-center">
+    <main className="min-h-screen w-full backdrop-blur-sm bg-blue-300/10 pb-6">
+      <div className="flex flex-col items-center lg:hidden">
         {/*Mobile view.*/}
         <div
           id="Header"
@@ -14,27 +14,35 @@ export default function Home() {
               src="/patrol.jpg"
               width={150}
               height={150}
-              className="rounded-full border-white border-2"
+              className="rounded-full border-white border-2 shadow-xl"
               alt="A picture of buckethead used as a placeholder for the meanwhile"
             />
           </div>
         </div>
-        <div className="w-11/12  mt-4 p-4 rounded border-t-2 border-white text-white  text-center">
-          <h1 className="">
+        <div className="w-11/12  mt-4 p-4  border-t-2  border-b-2 border-white/80 text-white/90  text-center">
+          <h1 className="pt-2">
             Hello! I'm <strong>Juho Järvilehto</strong>
           </h1>
           <br />
-          <p>
+          <p className="pb-5">
             I'm a 24 year old computer science student at metropolia. I'm
             interested in games, music , philosophy and programming. Currently
             working on improving UI/UX skills
           </p>
         </div>
-        <div className="w-11/12  mt-4 p-3 rounded border-2 border-white text-white">
-          <h1>hello hello hello</h1>
-        </div>
-        <div className="w-11/12  mt-4 p-3 rounded border-2 border-white text-white">
-          <h1>hello hello hello</h1>
+        <div className=" w-11/12 flex  flex-col pt-7 sm:flex-row sm:justify-center">
+          <div className="  mb-5  p-3 rounded bg-white/30 backdrop-blur-sm text-white shadow-xl sm:w-3/5 sm:mr-2 sm:mb-0">
+            <h1>
+              A list of programming languages I have used in projects so far
+            </h1>
+            <br />
+          </div>
+          <div className=" p-3 rounded bg-white/30 backdrop-blur-sm justify-between text-white shadow-xl flex sm:w-2/5 sm:ml-2 flex-col">
+            <div className="">
+              <p>asdasdasdasdasdasdasd</p>
+            </div>
+            <div className="bg-white/50 rounded-full p-3 mt-3"></div>
+          </div>
         </div>
       </div>
 
