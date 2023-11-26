@@ -29,7 +29,7 @@ export default function Home() {
         </div>
         <div className="w-11/12  mt-4 p-4  border-t-2  border-b-2 border-white/80 text-white/90  text-center">
           <h1 className="pt-2">
-            Hello! I'm <strong>Juho Järvilehto</strong>
+            Hello! I am <strong>Juho Järvilehto</strong>
           </h1>
           <br />
           <p className="pb-5">
