@@ -79,7 +79,7 @@ export default function Home() {
                       <tbody className="align-baseline">
                         <tr className="">
                           <td className="font-mono">Javascript</td>
-                          <td className="font-mono">Intermediate</td>
+                          <td className="font-mono">My ultimate ability</td>
                         </tr>
                         <tr>
                           <td className="font-mono">React</td>
