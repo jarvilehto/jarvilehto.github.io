@@ -103,7 +103,7 @@ export default function Home() {
                         </tr>
                         <tr>
                           <td className="font-mono">php</td>
-                          <td className="font-mono">familiar</td>
+                          <td className="font-mono ">familiar</td>
                         </tr>
                       </tbody>
                       <p className="mt-2">and many more...</p>
