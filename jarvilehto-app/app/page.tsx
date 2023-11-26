@@ -35,7 +35,7 @@ export default function Home() {
           <p className="pb-5">
             I am an 24 year old engineering student at metropolia. I am
             interested in games, music and programming. <br />
-            Currently working on improving UI/UX skills
+            Currently focusing on web-development and personal projects.
           </p>
         </div>
         <div className=" w-11/12 flex  flex-col pt-7 sm:flex-row sm:justify-center">
@@ -46,8 +46,7 @@ export default function Home() {
           >
             {!skill && (
               <>
-                <h1 className="font-bold underline">My skill set.</h1>
-                <br />
+                <h1 className="font-bold underline mb-5">My skill set.</h1>
                 <p>
                   During my studies I have learned the basics of programming
                   that later evolved into being specialized in web-development
@@ -114,11 +113,35 @@ export default function Home() {
               </>
             )}
           </div>
-          <div className=" h-3/5 p-3 rounded bg-white/30 backdrop-blur-sm justify-between text-white shadow-xl flex sm:w-2/5 sm:ml-2 flex-col">
-            <div className="">
-              <p></p>
+          <div className=" h-5/5  justify-between text-white shadow-xl flex sm:w-2/5 sm:ml-2 flex-col sm:h-4/5">
+            <div className="flex flex-col rounded bg-white/30 backdrop-blur-sm p-4 rounded w-full">
+              <div className="h-auto">
+                <h1 className="font-bold underline mb-2">Contact</h1>
+                <p>
+                  The most convenient way to contact me is to send an email to
+                  <strong> jarvilehtojuho@gmail.com</strong>.
+                </p>
+              </div>
             </div>
-            <div className="bg-white/50 rounded-full p-3 mt-3"></div>
+            <div className="bg-white/50 rounded p-2 mt-4 flex flex-row w-full justify-start">
+              <a href="https://github.com/jarvilehto" target="_blank">
+                <Image
+                  src={"/github.png"}
+                  width={30}
+                  height={30}
+                  className="ml-1 hover:scale-110"
+                  alt="A small github Logo"
+                />
+              </a>
+
+              <Image
+                src={"/linkedin.png"}
+                width={30}
+                height={30}
+                className=" ml-3 color-grey"
+                alt="A small github Logo"
+              />
+            </div>
           </div>
         </div>
       </div>
