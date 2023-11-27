@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
 
 export default function Home() {
   const [skill, setSkill] = React.useState(false);
@@ -148,7 +149,18 @@ export default function Home() {
 
       {/*Desktop Stuff*/}
       <div className="flex flex-col items-center justify-center lg:block hidden pt-20">
-        <div
+        <motion.div
+          initial={{
+            rotate: "0deg",
+            opacity: 0,
+          }}
+          animate={{
+            opacity: 1,
+          }}
+          transition={{
+            duration: 0.8,
+            ease: "easeIn",
+          }}
           id="Header"
           className="max-w-6xl flex justify-center  mx-auto rounded w-8/12 rounded bg-white/30 backdrop-blur-sm p-3"
         >
@@ -174,7 +186,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
         <div className="max-w-6xl w-4/6 flex  flex-row pt-7 justify-center m-auto">
           <div
             onClick={changeCard}
