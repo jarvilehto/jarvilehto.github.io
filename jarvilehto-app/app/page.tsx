@@ -10,7 +10,7 @@ export default function Home() {
   }
 
   return (
-    <main className="min-h-screen w-full backdrop-blur-sm bg-blue-300/10 pb-6">
+    <main className="min-h-screen w-full backdrop-blur-sm bg-blue-400/10 pb-6">
       {/*Mobile Stuff*/}
       <div className="flex flex-col items-center lg:hidden">
         <div
