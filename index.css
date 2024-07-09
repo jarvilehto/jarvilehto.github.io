@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 18px;
+}
+
+main {
+  margin: auto;
+  width: 55%;
+  padding: 50px;
+  max-width: 800px;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.small-link {
+  width: 20px;
+}
+
+#hc-title {
+  display: flex;
+  padding: 5px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+#hc-title h2 {
+  margin-right: 20px;
+}
+
+#hc-links img {
+  margin-right: 10px;
+}
+
+#hc-about {
+  margin-top: 20px;
+}
+
+#projects {
+  margin-top: 2em;
+}
+
+#projects-header {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+#project-container {
+  margin-bottom: 20px;
+  background-color: antiquewhite;
+  padding: 15px;
+}
+
+#container-about {
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+#container-about p {
+  margin-bottom: 2px;
+}
+
+#container-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 800px) {
+  main {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  main {
+    width: 100%;
+    padding: 0px;
+  }
+}
