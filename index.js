@@ -27,8 +27,7 @@ projects = [
     status: "Maintained",
     about: [
       "This is a personal project of mine. ",
-      "If you really love something, why not make it better! This is a small overhaul to the ",
-      "HUD for the game Team Fortress 2.  The Hud changes the positioning and overall look of important elements in the game for a more clean look and faster gathering of visual information.",
+      "If you really love something, why not make it better! This is a small overhaul to the HUD for the game Team Fortress 2.  The Hud changes the positioning and overall look of important elements in the game for a more clean look and faster gathering of visual information.",
       "",
     ],
     technology: ["Swift"],
@@ -98,7 +97,13 @@ const createList = () => {
     let containerHeader = document.createElement("div");
     let containerTitle = document.createElement("h3");
     containerTitle.innerHTML = projects[i].title;
+    let tech = document.createElement("p");
+    for (let j = 0; j < projects[i].technology.length; j++) {
+      tech.innerHTML += projects[i].technology[j] + " ";
+    }
+    tech.id = "header-tech";
     containerHeader.appendChild(containerTitle);
+    containerHeader.appendChild(tech);
     container.appendChild(containerHeader);
 
     //About
@@ -114,10 +119,6 @@ const createList = () => {
     //Footer
     let containerFooter = document.createElement("div");
     containerFooter.id = "container-footer";
-    let footerTech = document.createElement("p");
-    for (let j = 0; j < projects[i].technology.length; j++) {
-      footerTech.innerHTML += projects[i].technology[j] + " ";
-    }
     let status = document.createElement("p");
     let date = document.createElement("p");
     let linkToProject = document.createElement("a");
@@ -128,7 +129,7 @@ const createList = () => {
       linkToProject.href = projects[i].link;
       linkToProject.target = "_blank";
     }
-    linkToProject.innerHTML = "Repo>>";
+    linkToProject.innerHTML = "Repo >>";
     containerFooter.appendChild(date);
     containerFooter.appendChild(status);
     containerFooter.appendChild(linkToProject);
