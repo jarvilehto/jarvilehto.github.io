@@ -8,6 +8,17 @@ projects = [
     link: "",
   },
   {
+    title: "A customiseable game of jeopardy",
+    date: "Jly, 2024",
+    status: "Ongoing",
+    about: ["Idea I got from friends to automate the creation of custom jeopardy games.",
+            "You can add categories, questions and answers with custom sounds for correct/false answers.",
+            "Questions can also include embedded videos. Easily keep track of participants scores aswell!",
+            "Created without using any other extra frameworks / tools than Electron.js. A little challenge and return to basics"],
+    technology: ["Electron.js", "Vanilla JS", "HTML", "CSS"],
+    link: "",
+  },
+  {
     title: "Cafe Ava - Loyalty Card Webapp",
     date: "May 3, 2023",
     status: "Completed",
