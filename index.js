@@ -9,7 +9,7 @@ projects = [
   },
   {
     title: "A customiseable game of jeopardy",
-    date: "Jly, 2024",
+    date: "July, 2024",
     status: "Ongoing",
     about: ["Idea I got from friends to automate the creation of custom jeopardy games.",
             "You can add categories, questions and answers with custom sounds for correct/false answers.",
@@ -41,7 +41,7 @@ projects = [
       "If you really love something, why not make it better! This is a small overhaul to the HUD for the game Team Fortress 2.  The Hud changes the positioning and overall look of important elements in the game for a more clean look and faster gathering of visual information.",
       "",
     ],
-    technology: ["Swift"],
+    technology: ["ReScript"],
     link: "https://github.com/jarvilehto/vileHUD",
   },
   {
@@ -63,7 +63,7 @@ projects = [
       "In this project we were tasked to create a website that can automatically validate 1st year students HTML / JS assignments. The student receives information of what is missing from the assignment and if something is not functioning correctly before returning the assignment.  A professor can create tests per-assignment, and view how many times someone has returned the assignment, how many times they have failed, and the final result pass/fail.",
       "It also gathers information about entire assignment sets to give the professor an easy way to see if x student will pass a class.",
     ],
-    technology: ["JavaSript"],
+    technology: ["JavaScript"],
     link: "https://github.com/teemueer/js_checker",
   },
   {
@@ -139,6 +139,7 @@ const createList = () => {
     if (projects[i].link != "") {
       linkToProject.href = projects[i].link;
       linkToProject.target = "_blank";
+      linkToProject.innerHTML = "Repo >>";
     }
     linkToProject.innerHTML = "Repo >>";
     containerFooter.appendChild(date);
