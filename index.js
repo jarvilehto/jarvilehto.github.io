@@ -3,9 +3,10 @@ projects = [
     title: "Metsä Health - Website and Webstore",
     date: "June, 2024",
     status: "Ongoing",
-    about: ["coming soon..."],
+    about: ["Metsä Health is a Finnish company that sells wellness products that are manufactured and sourced in Finland.",
+            "https://metsahealth.fi/"],
     technology: ["Wordpress"],
-    link: "",
+    link: "https://metsahealth.fi/",
   },
   {
     title: "A customiseable game of jeopardy",
